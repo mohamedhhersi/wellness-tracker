@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 const Navbar: React.FC = () => {
   return (
     <motion.nav
-      className="bg-blue-500 p-4 fixed w-full top-0 z-50"
+      className="gradient-background p-4 fixed w-full top-0 z-50"
       initial={{ opacity: 0 }} // Starts invisible
       animate={{ opacity: 1 }} // Fades in to visible
-      transition={{ duration: 1 }} // Consistent duration
+      transition={{ duration: 1, delay: 0.3 }} // Consistent duration
     >
       <div className="flex justify-between items-center max-w-6xl mx-auto">
         {/* Logo/Title */}
