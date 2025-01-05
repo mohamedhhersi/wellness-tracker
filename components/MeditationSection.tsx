@@ -4,28 +4,24 @@ import { motion } from "framer-motion";
 const meditations = [
   {
     title: "Morning Calm",
-    duration: "10 min",
     category: "Mindfulness",
     image: "🌅",
     color: "from-orange-500/20 to-yellow-500/20",
   },
   {
     title: "Stress Relief",
-    duration: "15 min",
     category: "Breathing",
     image: "🌊",
     color: "from-blue-500/20 to-cyan-500/20",
   },
   {
     title: "Better Sleep",
-    duration: "20 min",
     category: "Sleep",
     image: "🌙",
     color: "from-indigo-500/20 to-purple-500/20",
   },
   {
     title: "Focus Flow",
-    duration: "12 min",
     category: "Productivity",
     image: "🎯",
     color: "from-green-500/20 to-emerald-500/20",

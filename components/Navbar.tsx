@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import Logo from "./Logo";
 
 const Navbar: React.FC = () => {
   const [visible, setVisible] = useState(true);
@@ -33,9 +34,11 @@ const Navbar: React.FC = () => {
       <div className="flex justify-between items-center max-w-6xl mx-auto">
         <Link
           href="/"
-          className="text-white font-bold text-xl hover:opacity-80 transition-opacity"
+          className="text-white font-bold text-xl hover:opacity-80 transition-opacity 
+                   flex items-center gap-2"
         >
-          Wellness Tracker
+          <Logo className="w-8 h-8 text-purple-300" />
+          <span>Flourish</span>
         </Link>
 
         <div className="flex gap-6">
@@ -47,14 +50,18 @@ const Navbar: React.FC = () => {
           >
             Home
           </Link>
-          <Link
-            href="/about"
-            className={`text-white hover:opacity-80 transition-opacity ${
-              router.pathname === "/about" ? "border-b-2 border-white" : ""
-            }`}
+          <a
+            href="#about"
+            className={`text-white hover:opacity-80 transition-opacity cursor-pointer`}
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             About
-          </Link>
+          </a>
         </div>
       </div>
     </motion.nav>

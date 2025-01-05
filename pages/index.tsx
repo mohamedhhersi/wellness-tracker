@@ -7,6 +7,8 @@ import FeatureShowcase from "../components/FeatureShowcase";
 import WellnessJournal from "../components/WellnessJournal";
 import MeditationSection from "../components/MeditationSection";
 import HealthMetrics from "../components/HealthMetrics";
+import About from "../components/About";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ const Home: React.FC = () => {
       <MeditationSection />
       <WellnessJournal />
       <FeatureShowcase />
+      <About />
+      <Footer />
     </div>
   );
 };

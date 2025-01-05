@@ -32,7 +32,7 @@ const features = [
 
 const FeatureShowcase: React.FC = () => {
   return (
-    <section className="py-24">
+    <section className="py-24" id="features">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-white text-center mb-16"

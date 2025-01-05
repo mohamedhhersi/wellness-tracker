@@ -14,3 +14,7 @@ body {
 .hover-glass-effect {
   @apply hover:bg-white/10 transition-all duration-300;
 }
+
+html {
+  scroll-behavior: smooth;
+}

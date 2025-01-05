@@ -43,13 +43,21 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
-            Transform Your Life,
-            <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-              One Habit at a Time
+          <motion.h1
+            className="text-5xl sm:text-6xl font-bold mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Transform Your Daily <br />
+            Habits with{" "}
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r 
+            from-purple-400 to-pink-400"
+            >
+              Flourish
             </span>
-          </h1>
+          </motion.h1>
         </motion.div>
 
         <motion.p
@@ -63,27 +71,27 @@ const Hero: React.FC = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-wrap gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <Link href="#habits">
+          <Link href="#habits" className="inline-block">
             <motion.button
               className="px-8 py-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm 
-                         border border-white/10 rounded-xl text-lg font-semibold shadow-lg 
-                         hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300"
+                       border border-white/10 rounded-xl text-lg font-semibold shadow-lg 
+                       hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Start Tracking →
             </motion.button>
           </Link>
-          <Link href="#features">
+          <Link href="#features" className="inline-block">
             <motion.button
               className="px-8 py-4 bg-gradient-to-r from-steel-gray/10 to-dark-purple/10 backdrop-blur-sm 
-                         border border-white/10 rounded-xl text-lg font-semibold shadow-lg 
-                         hover:from-steel-gray/20 hover:to-dark-purple/20 transition-all duration-300"
+                       border border-white/10 rounded-xl text-lg font-semibold shadow-lg 
+                       hover:from-steel-gray/20 hover:to-dark-purple/20 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
