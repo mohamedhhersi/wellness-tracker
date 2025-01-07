@@ -6,23 +6,24 @@ const Footer: React.FC = () => {
   return (
     <footer
       className="bg-gradient-to-r from-mice-elf-dark/30 to-dark-purple/30 backdrop-blur-sm 
-                     border-t border-white/10 py-12"
+                     border-t border-white/10 py-16"
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand Section */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Logo className="w-6 h-6 text-purple-300" />
-              <h3 className="text-xl font-bold text-white">Flourish</h3>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="space-y-6">
+            <div className="flex items-center gap-3 group cursor-pointer">
+              <Logo className="w-7 h-7 text-purple-300 group-hover:text-purple-200 transition-colors" />
+              <h3 className="text-2xl font-bold text-white group-hover:text-purple-200 transition-colors">
+                Flourish
+              </h3>
             </div>
-            <p className="text-white/60 text-sm">
+            <p className="text-white/70 text-sm leading-relaxed">
               Your journey to better habits starts here
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-5">
               <a
                 href="#"
-                className="text-white/60 hover:text-white transition-colors"
+                className="text-white/70 hover:text-purple-300 transition-all transform hover:scale-110"
               >
                 <svg
                   className="w-6 h-6"
@@ -35,7 +36,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="text-white/60 hover:text-white transition-colors"
+                className="text-white/70 hover:text-purple-300 transition-all transform hover:scale-110"
               >
                 <svg
                   className="w-6 h-6"
@@ -53,14 +54,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold text-lg">Quick Links</h4>
+            <ul className="space-y-3">
               <li>
                 <Link
                   href="#habits"
-                  className="text-white/60 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-purple-300 transition-colors inline-block hover:translate-x-1 transform duration-200"
                 >
                   Habits
                 </Link>
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
               <li>
                 <Link
                   href="#about"
-                  className="text-white/60 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-purple-300 transition-colors inline-block hover:translate-x-1 transform duration-200"
                 >
                   About
                 </Link>
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               <li>
                 <Link
                   href="#features"
-                  className="text-white/60 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-purple-300 transition-colors inline-block hover:translate-x-1 transform duration-200"
                 >
                   Features
                 </Link>
@@ -84,31 +84,49 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Features */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Features</h4>
-            <ul className="space-y-2">
-              <li className="text-white/60">Habit Tracking</li>
-              <li className="text-white/60">Wellness Journal</li>
-              <li className="text-white/60">Meditation Guide</li>
-              <li className="text-white/60">Health Metrics</li>
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold text-lg">Features</h4>
+            <ul className="space-y-3">
+              <li className="text-white/70 hover:text-purple-300 transition-colors cursor-default">
+                Habit Tracking
+              </li>
+              <li className="text-white/70 hover:text-purple-300 transition-colors cursor-default">
+                Wellness Journal
+              </li>
+              <li className="text-white/70 hover:text-purple-300 transition-colors cursor-default">
+                Meditation Guide
+              </li>
+              <li className="text-white/70 hover:text-purple-300 transition-colors cursor-default">
+                Health Metrics
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2">
-              <li className="text-white/60">support@wellnesstracker.com</li>
-              <li className="text-white/60">1-800-WELLNESS</li>
-              <li className="text-white/60">123 Health Street</li>
-              <li className="text-white/60">Wellness City, WC 12345</li>
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold text-lg">Contact</h4>
+            <ul className="space-y-3">
+              <li className="text-white/70 hover:text-purple-300 transition-colors">
+                <a href="mailto:support@wellnesstracker.com">
+                  support@wellnesstracker.com
+                </a>
+              </li>
+              <li className="text-white/70 hover:text-purple-300 transition-colors">
+                1-800-WELLNESS
+              </li>
+              <li className="text-white/70 hover:text-purple-300 transition-colors">
+                123 Health Street
+              </li>
+              <li className="text-white/70 hover:text-purple-300 transition-colors">
+                Wellness City, WC 12345
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/40 text-sm">
-          <p>© {new Date().getFullYear()} Flourish. All rights reserved.</p>
+        <div className="border-t border-white/10 mt-12 pt-8 text-center">
+          <p className="text-white/50 text-sm hover:text-white/70 transition-colors">
+            © {new Date().getFullYear()} Flourish. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
