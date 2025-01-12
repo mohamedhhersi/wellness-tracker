@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const features = [
+interface Feature {
+  title: string;
+  description: string;
+  icon: string;
+  color: string;
+}
+
+const features: Feature[] = [
   {
     title: "Progress Insights",
     description: "View detailed analytics and trends of your habits over time",
@@ -53,7 +60,7 @@ const FeatureShowcase: React.FC = () => {
   );
 };
 
-const FeatureCard = ({ feature, index }) => {
+const FeatureCard: React.FC<{ feature: Feature; index: number }> = ({ feature, index }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
