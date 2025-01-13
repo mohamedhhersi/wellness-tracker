@@ -1,42 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-interface Meditation {
-  title: string;
-  category: string;
-  image: string;
-  color: string;
-  duration: string;
-}
-
-const meditations: Meditation[] = [
+const meditations = [
   {
     title: "Morning Calm",
     category: "Mindfulness",
     image: "🌅",
     color: "from-orange-500/20 to-yellow-500/20",
-    duration: "10 min"
   },
   {
     title: "Stress Relief",
     category: "Breathing",
     image: "🌊",
     color: "from-blue-500/20 to-cyan-500/20",
-    duration: "15 min"
   },
   {
     title: "Better Sleep",
     category: "Sleep",
     image: "🌙",
     color: "from-indigo-500/20 to-purple-500/20",
-    duration: "20 min"
   },
   {
     title: "Focus Flow",
     category: "Productivity",
     image: "🎯",
     color: "from-green-500/20 to-emerald-500/20",
-    duration: "12 min"
   },
 ];
 
