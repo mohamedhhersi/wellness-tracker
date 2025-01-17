@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer
       className="bg-gradient-to-r from-mice-elf-dark/30 to-dark-purple/30 backdrop-blur-sm 
-                     border-t border-white/10 py-10"
+                     border-t border-white/10 py-16"
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
