@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Wellness Habit Tracker 🌟
 
-## Getting Started
+A modern and aesthetically pleasing habit tracker designed to help users build and maintain healthy habits. This project combines seamless functionality with a unique AI-powered feature to offer personalized insights, setting it apart from other wellness apps.
 
-First, run the development server:
+🚀 Features
+	•	Track Your Habits: Log and monitor daily habits with an intuitive interface.
+	•	Personalized AI Insights: Leverage AI to analyze habits and suggest ways to improve.
+	•	Beautiful Design: Clean, modern UI with smooth animations powered by Framer Motion.
+	•	Responsive: Fully responsive design for a great experience on any device.
+	•	Customizable: Tailor habit categories and goals to fit your personal wellness journey.
 
-```bash
+🛠️ Tech Stack
+	•	React: Component-based UI development.
+	•	Next.js: Server-side rendering and optimized performance.
+	•	TypeScript: Enhanced development with static typing.
+	•	Tailwind CSS: Utility-first CSS framework for efficient styling.
+	•	Framer Motion: Library for animations and transitions.
+	•	Supabase: Backend and authentication (planned feature).
+	•	AI API: To power unique AI-driven insights (integration in progress).
+
+🎨 Design
+	•	Global Gradient Background: A calming gradient (#948e99 to #2e1437) for consistency.
+	•	Animations: Inspired by Baked Design Studio, with fluid, interactive transitions.
+	•	Minimal but Not Plain: A modern design that balances simplicity and functionality.
+
+📦 Installation
+	1.	Clone the repository:
+
+git clone https://github.com/mohamedhhersi/wellness-habit-tracker.git
+
+
+	2.	Navigate to the project directory:
+
+cd wellness-habit-tracker
+
+
+	3.	Install dependencies:
+
+npm install
+
+
+	4.	Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+	5.	Open http://localhost:3000 in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🤝 Contributing
 
-## Learn More
+Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+🗒️ To-Do
+	•	Set up Tailwind CSS.
+	•	Implement global gradient background.
+	•	Add habit tracking functionality.
+	•	Integrate AI-powered insights using an affordable AI API.
+	•	Add user authentication with Clerk or Supabase.
+	•	Optimize animations with Framer Motion.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🌟 Acknowledgements
+	•	Inspiration for animations: Baked Design Studio
+	•	Supported by open-source libraries and tools like React, Next.js, and Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
