@@ -58,7 +58,5 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 	•	Add user authentication with Clerk or Supabase.
 	•	Optimize animations with Framer Motion.
 
-🌟 Acknowledgements
-	•	Inspiration for animations: Baked Design Studio
-	•	Supported by open-source libraries and tools like React, Next.js, and Tailwind CSS.
+
 
