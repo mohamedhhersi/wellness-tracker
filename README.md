@@ -52,7 +52,6 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 
 🗒️ To-Do
 	•	Set up Tailwind CSS.
-	•	Implement global gradient background.
 	•	Add habit tracking functionality.
 	•	Integrate AI-powered insights using an affordable AI API.
 	•	Add user authentication with Clerk or Supabase.
