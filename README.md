@@ -50,7 +50,6 @@ npm run dev
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
 🗒️ To-Do
-	•	Set up Tailwind CSS.
 	•	Add habit tracking functionality.
 	•	Integrate AI-powered insights using an affordable AI API.
 	•	Add user authentication with Clerk or Supabase.
