@@ -7,7 +7,6 @@ A modern and aesthetically pleasing habit tracker designed to help users build a
 	•	Personalized AI Insights: Leverage AI to analyze habits and suggest ways to improve.
 	•	Beautiful Design: Clean, modern UI with smooth animations powered by Framer Motion.
 	•	Responsive: Fully responsive design for a great experience on any device.
-	•	Customizable: Tailor habit categories and goals to fit your personal wellness journey.
 
 🛠️ Tech Stack
 	•	React: Component-based UI development.
