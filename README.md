@@ -15,7 +15,7 @@ A modern and aesthetically pleasing habit tracker designed to help users build a
 	•	Tailwind CSS: Utility-first CSS framework for efficient styling.
 	•	Framer Motion: Library for animations and transitions.
 	•	Supabase: Backend and authentication (planned feature).
-	•	AI API: To power unique AI-driven insights (integration in progress).
+	•	AI API: To power unique AI-driven insights (in progress).
 
 🎨 Design
 	•	Global Gradient Background: A calming gradient (#948e99 to #2e1437) for consistency.
