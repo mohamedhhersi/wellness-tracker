@@ -54,6 +54,7 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 	•	Integrate AI-powered insights using an affordable AI API.
 	•	Add user authentication with Clerk or Supabase.
 	•	Optimize animations with Framer Motion.
+ 	•	Leverage AI to analyze habits and suggest ways to improve.
 
 
 
