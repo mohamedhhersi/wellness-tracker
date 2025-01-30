@@ -40,7 +40,7 @@ const FeatureShowcase: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Discover What's Possible
+          Discover What&apos;s Possible
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -53,7 +53,17 @@ const FeatureShowcase: React.FC = () => {
   );
 };
 
-const FeatureCard = ({ feature, index }) => {
+interface FeatureCardProps {
+  feature: {
+    title: string;
+    description: string;
+    icon?: React.ReactNode;
+    color: string;
+  };
+  index: number;
+}
+
+const FeatureCard = ({ feature, index }: FeatureCardProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
