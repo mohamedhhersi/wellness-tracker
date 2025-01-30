@@ -1,9 +1,14 @@
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-br from-mice-elf-light to-mice-elf-dark min-h-screen bg-fixed;
+  @apply bg-gradient-to-br from-mice-elf-light to-mice-elf-dark min-h-screen bg-fixed text-white;
 }
 
 /* Add these new utility classes */
