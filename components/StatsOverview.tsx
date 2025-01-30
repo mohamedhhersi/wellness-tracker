@@ -15,7 +15,14 @@ const StatsOverview: React.FC = () => {
   );
 };
 
-const StatCard = ({ number, label, icon, delay }) => (
+interface StatCardProps {
+  number: string | number;
+  label: string;
+  icon: React.ReactNode;
+  delay: number;
+}
+
+const StatCard = ({ number, label, icon, delay }: StatCardProps) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
